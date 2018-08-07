@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server" : "nodemon index",
-    "client" : "ng serve -o",
-    "dev": "concurrently \"npm run server\" -c ../client/project \" ng serve -o \" "
+    "client" : "npm --prefix ../client/project run start",
+    "dev": "concurrently   \"npm run server\"  \" npm run client \" "
   },
   "author": "",
   "license": "ISC",
