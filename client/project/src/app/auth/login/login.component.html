@@ -1,0 +1,26 @@
+<div class="login-wrapper">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="field-group">
+
+      <div class="label">Логін</div>
+      <input type="text" class="form-input" formControlName="login">
+
+    </div>
+
+    <div class="field-group">
+
+      <div class="label">Пароль</div>
+      <input type="password" class="form-input" formControlName="password">
+
+    </div>
+
+    <div class="--btn-center button">
+      <button class="btn btn-default btn-xlg">
+        Зайти
+      </button>
+    </div>
+  </form>
+
+
+
+</div>

@@ -1,0 +1,51 @@
+.field-group{
+    margin-bottom: 10px;    
+    
+    .label{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+}
+
+.form-input{
+    border: 2px solid #ffce30;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 22px;
+    border-radius: 8px;
+
+    &:hover{
+        border: 2px solid #e3ad00;
+      }
+    
+      &:disabled, &:read-only{
+        opacity: 0.5;
+        &:focus{
+          border-color: #e3ad00;
+        }
+    
+        &:hover{
+          border: 2px solid #ffdc6e;
+        }
+    
+      }
+    
+      &::placeholder{
+        color:#B0BBC8;
+      }
+    
+      &.ng-dirty{
+        &.ng-invalid{
+          border-color: #F75E5E;
+        }
+      }
+    
+      &.error{
+        border-color: #F75E5E;
+      }
+    
+      &:focus{
+        border-color: #e3ad00;
+      }
+}
