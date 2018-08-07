@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index"
+    "server" : "nodemon index",
+    "client" : "ng serve -o",
+    "dev": "concurrently \"npm run server\" -c ../client/project \" ng serve -o \" "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "mongoose": "^5.2.6"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1"
   }
 }
